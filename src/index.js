@@ -12,7 +12,7 @@ document.querySelector('.generate-btn').addEventListener('click', () => {
 async function switchAdvice(){
   const adviceObj = await callAdvice();
 
-  document.querySelector('.advice-div').textContent = adviceObj.slip.advice;
+  document.querySelector('.advice-div').textContent = `"${adviceObj.slip.advice}"`;
   document.querySelector('.header').textContent = `ADVICE #${adviceObj.slip.id}`
 }
 
